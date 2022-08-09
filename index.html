@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phonie</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <h2>make some magic here!!</h2>
+
+  <main class="container">
+    <div class="text-boxes">
+      <input type="text" placeholder="Full Name">
+      <input type="tel" minlength="11" placeholder="Phone Number">
+      <input type="email" placeholder="Email">
+      <!--       <input type="password" placeholder="Password" > -->
+      <input id="p_number" type="tel" name="phoneNumber" placeholder="Enter remaining 10 digits"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" list="NetWorkTels" title="###-###-####" required />
+      <datalist id="NetWorkTels">
+        <option value="803-###-####">
+        <option value="806-###-####">
+        <option value="903-###-####">
+        <option value="802-###-####">
+        <option value="809-###-####">
+        <option value="808-###-####">
+        <option value="807-###-####">
+        <option value="805-###-####">
+        <option value="705-###-####">
+        <option value="702-###-####">
+        <option value="704-###-####">
+        <option value="810-###-####">
+        <option value="812-###-####">
+        <option value="813-###-####">
+        <option value="915-###-####">
+        <option value="904-###-####">
+      </datalist>
+
+      <button id="btn" onclick="myFunction" type="submit" class="submit-btn">Discover your phone number</button>
+    </div>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <script src=scripts.js></script>
 </body>
+
 </html>
